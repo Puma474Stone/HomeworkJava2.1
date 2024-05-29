@@ -9,8 +9,9 @@ public class Main {
         // System.out.println("Количество начисленных бонусов " + bonus);
 
         BonusMilesService service = new BonusMilesService();
-        int miles = service.calculate(10000, 20); // должно получиться 500
-        System.out.println(miles);
+        int price = 10_000;
+        int miles = service.calculate(price); // должно получиться 500
+        System.out.println("Количество начисленных бонусов: " +miles);
 
 
 
